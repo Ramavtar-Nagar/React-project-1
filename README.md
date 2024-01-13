@@ -1,70 +1,86 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# IMDB Clone
 
-## Available Scripts
+It is IMDB clone project.
 
-In the project directory, you can run:
+In this project we can search different movies and we are also able to add them to our favouriate/watchlist for future refferences.
 
-### `npm start`
+We can search different movie by typing their name in the search bar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When we mark any particular movie as favouriate than it is added to our watchlist and gets stored in the localstorage of the browser so that it does not disappear when we refresh the page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project uses an api named as OMDB and fetches all movies from there only.
 
-### `npm test`
+It has three different pages one for the home page to display main section of the project, one for details of the movie which shows some of the details of the movie and one is for watchlist which contains all the movies which we had marked as favouriate/watchlater.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Main page shows all the movies which come after search.
 
-### `npm run build`
+Movie details page shows some of the information about the particular movie.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Watch list page shows all the movies which are marked as favouriate with some information about them.
+## Languages Used
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For making different pages and the basic structure of the project like search bar, add to watchlist icon, delete icon, home page, movie details page and favouriate page etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-### `npm run eject`
+Used for the basic and good looking styling of the project so that the project looks good and appealing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To implement all the functionalities of the project like fetching data from api, displaying movies based on search bar input value, saving favouriate movies to localstorage, fetching from localstorage to display them in watchlist page.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I had hosted the project live on -
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Hosted Link](https://sage-elf-5c4960.netlify.app)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## E-mail Address
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![MIT gmeil](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://choosealicense.com/licenses/mit/)
 
-### Code Splitting
+[My Gmail ID](ramavtarnagar13@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔗 My Socials
 
-### Advanced Configuration
+![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+https://www.linkedin.com/in/ramavtar-nagar-a942a4216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
-### Deployment
+![X](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+https://x.com/Ramavta60509861?t=7nTCY6zozQfNJs5uYGFyTQ&s=09
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## API Reference
+
+#### Get all items
+
+```http
+  GET /api/items
+```
+
+| API Key | Type     | API Address                |
+| :-------- | :------- | :------------------------- |
+| `48aa722f` | `string` | https://www.omdbapi.com/ |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | https://www.omdbapi.com/?i=${id}&apikey=${key} |
+
+
